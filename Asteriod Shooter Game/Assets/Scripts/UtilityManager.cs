@@ -34,6 +34,7 @@ public class UtilityManager
     {
 
     }
+        
 
     public void GoVisibility(bool status, params GameObject[] objs)
     {

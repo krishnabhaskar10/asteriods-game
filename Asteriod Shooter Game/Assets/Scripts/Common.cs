@@ -16,4 +16,9 @@ public class Common
         ACCELERATE,
         SHOOT
     }
+
+    public const float screenTop = 7f;
+    public const float screenBottom = -7f;
+    public const float screenLeft = -12f;
+    public const float screenRight = 12f;
 }

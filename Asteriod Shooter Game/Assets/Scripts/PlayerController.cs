@@ -68,12 +68,18 @@ public class PlayerController : MonoBehaviour, IFlyer
 
     private void OnBulletLoaded(GameObject _go)
     {
-        _go.transform.position = firePoint.position;
-        _go.transform.rotation = firePoint.rotation;
-        _go.transform.SetParent(firePoint);
+        if (_go == null)
+            return;
+        
+        _go.transform.SetParent(firePoint, false);
 
         Rigidbody2D rb = _go.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void Update()
+    {
+        ScreenWrapping();
     }
 
     void FixedUpdate()
@@ -97,5 +103,29 @@ public class PlayerController : MonoBehaviour, IFlyer
             default:
                 break;
         }
+    }
+
+    private void ScreenWrapping()
+    {
+        Vector2 newPos = transform.position;
+
+        if (transform.position.y > Common.screenTop)
+        {
+            newPos.y = Common.screenBottom;
+        }
+        if (transform.position.y < Common.screenBottom)
+        {
+            newPos.y = Common.screenTop;
+        }
+        if (transform.position.x > Common.screenRight)
+        {
+            newPos.x = Common.screenLeft;
+        }
+        if (transform.position.x < Common.screenLeft)
+        {
+            newPos.x = Common.screenRight;
+        }
+
+        transform.position = newPos;
     }
 }
