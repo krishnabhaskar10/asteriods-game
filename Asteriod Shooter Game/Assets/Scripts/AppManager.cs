@@ -16,6 +16,7 @@ public class AppManager : MonoBehaviour
 
     private void Awake()
     {
+        
         if (Instance == null)
         {
             Instance = this as AppManager;
@@ -25,6 +26,7 @@ public class AppManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
 
         uIManager = new UIManager(this);
         resourceManager = new ResourceManager(this);
