@@ -8,6 +8,7 @@ public class Common
     public const string inGameHUDPath = "HUD/Canvas";
     public const string gameElements = "GameElements";
     public const string bulletPrefabPath = "Players/bullet";
+    public const string collisionEffectPrefab = "Players/collisionEffect";
 
     public enum PLAYERACTIONS
     {

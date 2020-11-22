@@ -542,6 +542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: asteriod01
       objectReference: {fileID: 0}
+    - target: {fileID: 8934453167144314931, guid: ffbeea4f5923e4143b28d75428bdf10c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffbeea4f5923e4143b28d75428bdf10c, type: 3}
 --- !u!1 &4500364561683931496 stripped
@@ -572,6 +577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: asteriod02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3417138705725830155, guid: a77f68960c225b9448c7cd0d70b6590c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 4058849256206830068, guid: a77f68960c225b9448c7cd0d70b6590c,
         type: 3}
@@ -744,6 +754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: asteriod05
       objectReference: {fileID: 0}
+    - target: {fileID: 8962802262943813270, guid: a5ce6ef312d99004d8be52c969d4f0a2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5ce6ef312d99004d8be52c969d4f0a2, type: 3}
 --- !u!1 &4173510034430832173 stripped
@@ -839,6 +854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: asteriod04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690140151803728146, guid: e5efc1036748f464aaaebc17bc4c61eb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
       objectReference: {fileID: 0}
     - target: {fileID: 8401277586316088498, guid: e5efc1036748f464aaaebc17bc4c61eb,
         type: 3}
@@ -946,6 +966,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: asteriod06
       objectReference: {fileID: 0}
+    - target: {fileID: 5974052757782023682, guid: d7b429476aafd15488ffdaa1ffda93fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7b429476aafd15488ffdaa1ffda93fb, type: 3}
 --- !u!1 &1684651086083480057 stripped
@@ -1046,6 +1071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: asteriod03
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503654026038279161, guid: 9858448e1d1871647a9788f76569fa85,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemies
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9858448e1d1871647a9788f76569fa85, type: 3}
