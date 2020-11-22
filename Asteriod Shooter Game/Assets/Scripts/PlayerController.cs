@@ -87,12 +87,10 @@ public class PlayerController : MonoBehaviour, IFlyer
         switch (playerActions)
         {
             case Common.PLAYERACTIONS.ROTATELEFT:
-                //transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z + 5f);
-                //transform.Rotate(0, 0, 5f * Time.deltaTime);
+                
                 break;
             case Common.PLAYERACTIONS.ROTATERIGHT:
-                //transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z - 5f);
-                //transform.Rotate(0, 0, -5f * Time.deltaTime);
+                
                 break;
             case Common.PLAYERACTIONS.ACCELERATE:
                 transform.position += transform.up * multiplier * Time.deltaTime;

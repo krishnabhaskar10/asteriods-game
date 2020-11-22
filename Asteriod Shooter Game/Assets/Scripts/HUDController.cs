@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class HUDController : MonoBehaviour
 {
-    #region Variables
-
     public GameObject gameHudPanel = null;
     public GameObject mainMenuPanel = null;
 
@@ -14,17 +14,29 @@ public class HUDController : MonoBehaviour
     public Button accelerateButton = null;
     public Button shootButton = null;
 
-    #endregion
-
-    #region Unity Methods
-
+    public TMP_Text timeText = null;
+    private float timer = 5.0f;
+        
     private void Start()
     {
         ShowMainMenuPanel();
         AddOnClickListeners();
     }
 
-    #endregion
+    private void Update()
+    {
+        timer -= Time.deltaTime/60;
+        SetTimer(timer);
+        if (timer <= 0.0f)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+       
+    public void SetTimer(float _value)
+    {
+        timeText.text = _value.ToString("#00.00");
+    }
 
     private void DisableAllPanels()
     {

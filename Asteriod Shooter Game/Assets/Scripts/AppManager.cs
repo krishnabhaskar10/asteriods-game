@@ -9,6 +9,7 @@ public class AppManager : MonoBehaviour
     internal UIManager uIManager = null;
     internal ResourceManager resourceManager = null;
     internal UtilityManager utilityManager = null;
+    internal DataManager dataManager = null;
 
     #endregion
 
@@ -31,6 +32,7 @@ public class AppManager : MonoBehaviour
         uIManager = new UIManager(this);
         resourceManager = new ResourceManager(this);
         utilityManager = new UtilityManager(this);
+        dataManager = new DataManager();
     }
 
     private void Start()
@@ -38,6 +40,7 @@ public class AppManager : MonoBehaviour
         resourceManager.OnLoad();
         uIManager.OnLoad();
         utilityManager.OnLoad();
+        dataManager.OnLoad();
     }
 
     private void Update()
@@ -45,6 +48,7 @@ public class AppManager : MonoBehaviour
         resourceManager.OnUpdate();
         uIManager.OnUpdate();
         utilityManager.OnUpdate();
+        dataManager.OnUpdate();
     }
 
     private void OnDestroy()
@@ -52,6 +56,7 @@ public class AppManager : MonoBehaviour
         resourceManager.OnUnload();
         uIManager.OnUnload();
         utilityManager.OnUnload();
+        dataManager.OnUnload();
     }
 
     #endregion

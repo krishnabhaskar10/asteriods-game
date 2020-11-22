@@ -32,7 +32,7 @@ public class UIManager
 
     public void OnUnload()
     {
-
+        monoBehaviour = null;
     }
 
     public void AddGameElements()

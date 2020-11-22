@@ -32,7 +32,7 @@ public class UtilityManager
 
     public void OnUnload()
     {
-
+        monoBehaviour = null;
     }
         
 

@@ -1894,6 +1894,7 @@ MonoBehaviour:
   rightRotateButton: {fileID: 3650530794869942852}
   accelerateButton: {fileID: 3650530795758641641}
   shootButton: {fileID: 3650530794782036069}
+  timeText: {fileID: 3650530795143951530}
 --- !u!1 &3650530794889280082
 GameObject:
   m_ObjectHideFlags: 0

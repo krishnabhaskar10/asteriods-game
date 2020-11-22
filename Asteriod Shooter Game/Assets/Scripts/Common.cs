@@ -10,6 +10,8 @@ public class Common
     public const string bulletPrefabPath = "Players/bullet";
     public const string collisionEffectPrefab = "Players/collisionEffect";
 
+    public const string jsonPath = "Sample.json";
+
     public enum PLAYERACTIONS
     {
         ROTATELEFT,

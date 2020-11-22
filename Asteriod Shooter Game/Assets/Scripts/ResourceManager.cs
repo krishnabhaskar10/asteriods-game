@@ -25,7 +25,6 @@ public class ResourceManager
     private GameObject AddResourcetoScene(GameObject _obj)
     {
         GameObject go = null;
-
         
         try
         {            
@@ -83,6 +82,6 @@ public class ResourceManager
 
     public void OnUnload()
     {
-
+        monoBehaviour = null;
     }
 }
